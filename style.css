@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: lightblue;
+    border: 5px solid white;
+    font-family: sans-serif;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    padding-top: 1%;
+}
+
+a {
+    text-align: center;
+}
+
+.container {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.card {
+    margin: 5% 7%;
+    max-height: 700px;
+    background: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-img {
+    object-fit: cover;
+    flex-basis: 200px; 
+    min-width: 0;
+    min-height: 0;
+    background: yellow;
+}
+
+.card-content {
+    padding: 1em;
+    /*padding-bottom: 0;*/
+}
+
+.card-title,
+.card-read-time,
+.card-btn {
+    font-family: 'Blinker', sans-serif;
+}
+
+.card-title {
+    color: #05cbe9;
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.card-body {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    max-width: 300px;
+    margin-bottom: 3rem;
+    margin: auto;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    border: solid 2px blue;
+    width: 100%;
+   /* justify-content: space-between;*/
+    align-items: flex-end;
+    margin-top: 3rem;
+   /* max-width: 600px;*/
+    max-height: 100px;
+}
+
+.card-btn {
+    font-size: 1.25rem;
+    background: #05cbe9;
+    color: #111d4a;
+    text-decoration: none;
+    font-weight: 700;
+    padding: .35em 1em;
+    letter-spacing: 1px;
+}
+
+.card-read-time {
+    margin: 0;
+    opacity: .6;
+    line-height: 1;
+}
+
+.card-read-time span {
+    font-weight: 700;
+    display: block;
+    font-size: 1.25em;
+
+}
+
+/* 1000px or larger */
+@media (min-width: 1000px) {
+    .container {
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .card {
+        flex-direction: row;
+        max-width: 30%;
+        margin-left: 1% 1%;
+        border: solid red 2px;
+    }
+    /*
+    .card-content.card-footer {
+        align-content: flex-end;
+    }*/
+
+    .card-img {
+       /* height: 300px; */
+       max-height: 200px;
+    }
+    
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+       /* max-width: 25%;*/
+    }
+    
+    .card-title {
+        font-size: 2.25rem
+    }
+    
+    .card-body {
+        font-size: 1.125rem;
+        max-width: 300px;
+    }
+    
+    .card-footer {
+       /* margin-top: 3rem;
+        justify-content: space-between;*/
+    }
+}
